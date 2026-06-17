@@ -125,7 +125,7 @@ pip install lark
 Clona il repository:
 
 ```bash
-git clone https://github.com/Lucas5N/Gamblang.git
+git clone https://github.com/Lucas5N/Gamblang_Staiano.git
 cd Gamblang
 ```
 
@@ -139,7 +139,7 @@ chmod +x gamblang
 
 ## Utilizzo
 
-Crea un file sorgente, ad esempio `programma.gamblang`, ed eseguilo con:
+Crea un file sorgente, ad esempio `programma.gamblang` (l'estensione non è importante), ed eseguilo con:
 
 ```bash
 ./gamblang programma.gamblang
