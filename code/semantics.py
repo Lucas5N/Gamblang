@@ -23,10 +23,10 @@ class GAMBLANGSemanticAnalyzer(Interpreter):
         if var_name in self.symbol_table:
             raise Exception(f"Errore: Ridichiarazione della variabile '{var_name}'")
         self.symbol_table[var_name] = "GAMBLE"
-        self.gamble_history[var_name] = 0  # inizializza contatore
+        self.gamble_history[var_name] = 0
         if len(node.children) > 1:
             self.visit(node.children[1])
-            self.gamble_history[var_name] = 1  # il <- iniziale conta
+            self.gamble_history[var_name] = 1
 
     def steady_assign(self, node):
         var_name = node.children[0].value
@@ -47,7 +47,7 @@ class GAMBLANGSemanticAnalyzer(Interpreter):
                 f"Errore : '{var_name}' è di tipo steady. Usa = Per favore!"
             )
         self.visit(node.children[1])
-        self.gamble_history[var_name] += 1  # incrementa ad ogni <-
+        self.gamble_history[var_name] += 1 
 
     def var(self, node):
         var_name = node.children[0].value
