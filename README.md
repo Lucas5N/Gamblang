@@ -1,6 +1,6 @@
 # Gamblang 
 
-GAMBLANG è un linguaggio di programmazione sperimentale che introduce elementi di casualità direttamente nel linguaggio. Oltre alle variabili tradizionali, supporta strutture che mantengono una cronologia dei valori assegnati e costrutti condizionali basati sulla probabilità.
+Gamblang è un linguaggio di programmazione sperimentale che introduce elementi di casualità direttamente nel linguaggio. Oltre alle variabili tradizionali, supporta strutture che mantengono una cronologia dei valori assegnati e costrutti condizionali basati sulla probabilità.
 
 Il compilatore utilizza un parser LALR per analizzare il sorgente, esegue controlli semantici sui tipi e genera codice C standard, che viene poi compilato ed eseguito tramite `gcc`.
 
